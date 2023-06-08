@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>THSS<span>.</span></h1>
+        </div>
+        <div class="bar" id="bar" onclick="changeStyle()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="nav" id="nav">
+            <div class="cross" id="cross" onclick="changeStyles()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner" id="banner">
+        <div class="moddle" id="moddle">
+            <h1 class="h11">THE</h1>
+            <h1 class="h12"><span>HIGH</span> SCHOOL</h1>
+            <h1 class="h13">SHOW</h1>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="obt"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit error, dolorum officia id aut<br><br>ipsum sed impedit tempora corporis libero commodi tenetur, quasi hic? Esse, suscipit impedit cumque voluptate consectetur quidem eveniet quos quis possimus in natus atque fugit! Excepturi magnam dolorem ut necessitatibus ipsam vel nobis unde eaque?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque cum facilis suscipit ipsam? Recusandae deleniti quia autem dolor. Reiciendis.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="main.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+window.addEventListener('scroll', function(){
+document.querySelector('header');
+const header = document.querySelector('header');
+header.classList.toggle("sticky", window.scrollY > 0);
+});
+</script>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
